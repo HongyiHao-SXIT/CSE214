@@ -64,7 +64,6 @@ class Playlist {
         size++;
     }
 
-    // removeSong方法
     public void removeSong(int position) {
         if (position < 1 || position > size) {
             throw new IllegalArgumentException("Position is not within the valid range");
@@ -76,7 +75,6 @@ class Playlist {
         size--;
     }
 
-    // getSong方法
     public SongRecord getSong(int position) {
         if (position < 1 || position > size) {
             throw new IllegalArgumentException("Position is not within the valid range");
@@ -84,14 +82,12 @@ class Playlist {
         return songs[position - 1];
     }
 
-    // printAllSongs方法
     public void printAllSongs() {
         for (int i = 0; i < size; i++) {
             System.out.println((i + 1) + ". " + songs[i].toString());
         }
     }
 
-    // getSongsByArtist方法
     public static Playlist getSongsByArtist(Playlist originalList, String artist) {
         if (originalList == null || artist == null) {
             return null;
@@ -105,7 +101,6 @@ class Playlist {
         return newPlaylist;
     }
 
-    // toString方法
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
