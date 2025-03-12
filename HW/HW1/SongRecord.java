@@ -1,4 +1,4 @@
-package HW1;
+package HW.HW1;
 
 class SongRecord {
     private String title;

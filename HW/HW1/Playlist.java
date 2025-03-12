@@ -1,4 +1,4 @@
-package HW1;
+package HW.HW1;
 
 class Playlist {
     private static final int MAX_SONGS = 50;
